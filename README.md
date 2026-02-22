@@ -612,6 +612,7 @@ Use the output as the `password_hash` value in your INSERT statement.
 
 **Gnyanprakhash M**
 
+- If you found this project helpful, feel free to ⭐ star the repository.
 - 📧 Email: [gnyanprakhash2005@gmail.com](mailto:gnyanprakhash2005@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/gnyanprakhash-m-46104b361](https://www.linkedin.com/in/gnyanprakhash-m-46104b361)
 
