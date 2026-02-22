@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: rgba(139, 139, 139, 1);
+}
+
+.lp,
+.rp {
+    display: grid;
+    flex-shrink: 0;
+    align-items: center;
+
+}
+
+.rp {
+    margin-left: auto;
+    width: 49.65%;
+}
+
+.lp {
+    margin-right: auto;
+    width: 49.65%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#progress-container {
+    width: 100%;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 45px;
+    background: linear-gradient(to right, rgba(11, 91, 163, 1), rgba(115, 182, 255, 1));
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 0px;
+    font-family: monospace;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+
+}
+
+.navbar-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.navbar .logo {
+    width: 311px;
+    height: 100px;
+}
+
+.logout-btn {
+    margin-left: auto;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 295px;
+    height: 74px;
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.logout-btn:hover {
+    text-decoration: none;
+    background-color: white;
+    font-size: 20px;
+    font-family: monospace;
+    color: black;
+    font-weight: bold;
+    transition-timing-function: ease-in-out;
+}
+
+
+.profile2 .container {
+    height: 650px;
+    align-items: flex-start;
+}
+
+.profile3 .container {
+    height: 364px;
+    margin-top: auto;
+    margin-bottom: 12px;
+}
+
+.container {
+    height: 212px;
+    align-items: center;
+    align-content: center;
+    font-size: large;
+    padding: 30px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+}
+
+html {
+    font-family: monospace;
+}
+
+.reset-btn {
+    margin-top: 10px;
+    margin-left: 40%;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.reset-btn:hover {
+    text-decoration: none;
+    background-color: white;
+    font-size: 15px;
+    font-family: monospace;
+    color: black;
+    font-weight: bold;
+    transition-timing-function: ease-in-out;
+}
+
+.profile2 .container .recommended {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.recommended,
+.food-calorie-count,
+.upload-btn {
+    margin-bottom: 17px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.food-calorie-count {
+    text-align: left;
+    padding: 30px 30px;
+    background-color: rgba(227, 227, 227, 1);
+    border: 7px solid;
+    border-color: rgba(168, 168, 168, 0.14);
+    ;
+    color: rgba(115, 115, 115, 1);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.upload-btn {
+    background-image: url('imgs/upd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 15px;
+    color: rgba(236, 236, 236, 1);
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0px;
+}
+
+#username,
+#age,
+#weight,
+#height,
+#bmi,
+#bmr {
+    color: rgba(41, 134, 218, 1);
+    font-weight: bold;
+}
+
+.profile-section p,
+h2,
+.consumed p,
+.consumed h3,
+.container h1,
+.recommended h3,
+.recommended #recommended-calories,
+#username,
+#age,
+#weight,
+#height,
+#bmi,
+#bmr,
+#breakfast,
+#lunch,
+#dinner,
+#snacks {
+    font-size: 25px;
+}
+
+
+#breakfast {
+    color: rgba(218, 138, 41, 1);
+}
+
+#lunch {
+    color: rgba(41, 218, 121, 1);
+}
+
+#dinner {
+    color: rgba(255, 101, 101, 1);
+}
+
+#snacks {
+    color: rgba(41, 134, 218, 1);
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.upload-btn button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 30px 118px;
+    color: black;
+    font-weight: bold;
+
+}

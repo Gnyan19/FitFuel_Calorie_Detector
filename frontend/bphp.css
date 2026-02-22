@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    color: white;
+    width: fit-content;
+    padding: 5px 10px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    padding: 30px ;
+}
+
+.container:hover{
+    animation: shake 0.4s ease-in-out;
+}
+.container{
+    margin-top: 150px;
+}
+button{
+    align-items: center;
+}
+
+button {
+    width: 25%;
+    height: 10%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glow Effect */
+button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+   
+    z-index: -1;
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Button Hover Effects */
+button:hover {
+    animation: shake 0.4s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+}
+
+button:hover::before {
+    opacity: 1;
+}
+
+/* Button Active (Click) Effect */
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 25px rgba(0, 123, 255, 1);
+}
+
+/* Keyframes for Shake Effect */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+
+.sliding-background {
+    width: 400%;
+    height: 100vh;
+    display: flex;
+    animation: slideBackground 20s linear infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.sliding-background img {
+    width: 25%;
+    height: 100%;
+    opacity: 60%;
+    object-fit: cover;
+    
+}
+
+@keyframes slideBackground {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-75%); }
+}
+
+header {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header-left {
+    margin-left: 20px;
+}
+
+.header-left .logo {
+    height: 50px;
+    width: auto;
+}
+
+.header-right {
+    margin-right: 20px;
+}
+
+.header {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.header img {
+    height: 50px;
+    margin-left: 1px;
+}
+

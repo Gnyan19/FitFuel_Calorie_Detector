@@ -1,0 +1,79 @@
+h3, h4 {
+    text-decoration: underline;
+}
+
+.calci {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.calculate {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #19ea4d;
+    background-color: #eaffd0;
+    border-radius: 5px;
+    width: 320px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Align text labels and input fields */
+label {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+input {
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Gender section - Make it horizontal */
+.gender-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.gender-container label {
+    font-weight: normal;
+    margin: 0;
+}
+
+.gender-container input {
+    width: auto;
+    margin: 0;
+}
+
+/* Button styling */
+button {
+    margin-top: 15px;
+    border: 1px solid #19ea4d;
+    background-color: #70e000;
+    padding: 8px 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #5cbf00;
+}

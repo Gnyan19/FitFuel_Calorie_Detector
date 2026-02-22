@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Sliding Background */
+.sliding-background {
+    width: 400%;
+    height: 100vh;
+    display: flex;
+    animation: slideBackground 20s linear infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.sliding-background img {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 60%;
+}
+
+@keyframes slideBackground {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-75%); }
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header-left {
+    margin-left: 20px;
+}
+
+.header-left .logo {
+    height: 50px;
+    width: auto;
+}
+
+.header-right {
+    margin-right: 20px;
+}
+
+.header-right button {
+    background-color: white;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.header-right button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* Forms */
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin-top: 50px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.input-group input {
+    width: calc(100% - 40px);
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-group input:hover,
+.input-group input:focus {
+    border-color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.container button[type="submit"]:hover {
+    background-color: #000000a0;
+    transform: scale(1.05);
+}
+
+/* Style for the "Sign up now!" link */
+.container p a {
+    color: #007bff; /* Change this to #007bff */
+    text-decoration: none;
+    font-weight: none;
+}
+
+.container p a:hover {
+    text-decoration: underline;
+}
+
+/* Hide the signup form by default */
+.signup-form {
+    display: none;
+}

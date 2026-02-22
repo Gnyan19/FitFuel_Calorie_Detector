@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFuel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="sliding-background">
+        <img src="https://i.pinimg.com/736x/c2/1f/b3/c21fb3af88be43c89e80924efa5d651d.jpg" alt="Image 1">
+        <img src="https://i.pinimg.com/736x/df/f3/a3/dff3a3e9819404f3a9a46c4af413ccd6.jpg" alt="Image 2">
+        <img src="https://mc.today/wp-content/uploads/2021/03/Depositphotos_150139860_xl-2015-768x447.jpg"
+            alt="Image 3">
+        <img src="https://i.pinimg.com/736x/d3/ba/86/d3ba868a56eef7d88f023534388ba2d3.jpg" alt="Image 4">
+    </div>
+
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="FitFuel Logo" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <!-- Login Form -->
+        <div class="container login-form">
+            <h2>Member Login</h2>
+            <form id="loginForm" action="login.php" method="POST">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <a href="#" class="forgot-password">Forgot password?</a>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        // Form submission handling
+        document.getElementById('loginForm').addEventListener('submit', (event) => {
+            
+        });
+    </script>
+</body>
+
+</html>
