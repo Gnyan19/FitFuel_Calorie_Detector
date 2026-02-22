@@ -2,7 +2,7 @@
 
 > Upload a food photo → AI identifies the food → fetches real calorie data → tracks your daily intake with a live progress bar.
 
-![FitFuel Banner](assests/Landing%20page.jpg)
+![FitFuel Banner](assets/Landing%20page.jpg)
 
 ---
 
